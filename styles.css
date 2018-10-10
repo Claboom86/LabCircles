@@ -1,0 +1,82 @@
+body {
+    font-family: open sans;
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translatey(-50%);
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #69696a;
+    padding: 10px;
+}
+
+.left {
+    float: left;
+    display: inline-block;
+    width: 46%;  
+    height: 500px; 
+}
+
+.right {
+    float: right;
+    display: inline-block;
+    height: 500px;
+    width: 46%;
+}
+
+.pink {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    background-color: rgba(247, 136, 167, 0.6);
+    top: 25%;
+}
+
+.orange {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background-color: rgba(247, 193, 162, 0.7);
+    bottom: 5%;
+    left: 30%;
+}
+
+.purple {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    background-color: rgba(207, 130, 213, 0.6);
+    bottom: 65%;
+    left: 40%;
+}
+
+button {
+    display: block;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    background-color: black;
+    color: white;
+    height: 35px;
+    width: 100px;
+    border-radius: 35px;
+}
+
+.clearfix {
+    clear: both;
+}

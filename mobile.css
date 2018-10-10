@@ -1,0 +1,152 @@
+body {
+    font-family: open sans;
+}
+
+header {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+header p {
+    padding: 0px 10px;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #69696a;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 35px;
+    border-radius: 35px;
+    text-align: center;
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+section p {
+    color: #69696a;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #69696a;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 96%;
+    border-radius: 35px;
+    text-align: center;
+    font-size: 24px;
+    margin: 0 16px;
+}
+
+.main {
+    padding: 0px 20px;
+}
+
+@media only screen and (min-width: 1200px) {
+    header, nav {
+        flex-direction: row;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    nav {
+        justify-content: space-around;
+        width: 40%;
+    }
+    
+    .button {
+        font-size: 14px;
+        height: 20px;
+        width: 90px;
+    }
+
+    .main {
+        display: flex;
+    }
+
+    .left {
+        flex: 50%;
+        margin-top: 100px;
+    }
+
+    .right {
+        flex: 50%;
+        position: relative;
+    }
+
+    .pink {
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        border-radius: 150px;
+        background-color: rgba(247, 136, 167, 0.6);
+        top: 165px;
+        right: 110px;
+    }
+    
+    .orange {
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        background-color: rgba(247, 193, 162, 0.7);
+        top: 320px;
+        right: 0px;
+    }
+    
+    .purple {
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        border-radius: 75px;
+        background-color: rgba(207, 130, 213, 0.6);
+        top: 215px;
+        right: 0px;
+    }
+
+    button {
+        display: block;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 5%;
+        background-color: black;
+        color: white;
+        height: 35px;
+        width: 120px;
+        border-radius: 35px;
+        font-size: 14px;
+    }
+
+}
